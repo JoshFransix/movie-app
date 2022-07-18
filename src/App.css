@@ -16,6 +16,10 @@ a {
   flex-wrap: nowrap;
 }
 
+.moviesContainer ::-webkit-scrollbar-thumb {
+  display: none;
+}
+
 .cardName {
   background: rgba(0, 0, 0, .7);
 }

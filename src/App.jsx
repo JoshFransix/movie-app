@@ -46,7 +46,7 @@ const App = () => {
           <h1 className=" text-7xl  w-[490px] leading-[93.74px] text-[72px] text-white font-bold lg:text-center lg:text-5xl sm:text-2xl">Watch something incredible.</h1>
         </div>
       </div>
-      <div className=" px-[5%]  py-16 md:py-8 sm:py-6">
+      <div className=" px-[5%] pt-16 sm:pt-8">
         <div className="search  flex flex-col">
           <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
         </div>
@@ -55,9 +55,15 @@ const App = () => {
         <MovieListHeading heading='Movies' />
 
       </div> */}
-      <div className="moviesContainer container-fluid py-10 pl-[5%] sm:py-4">
-        <h1 className="text-2xl mb-4">Movies</h1>
-        <div className="row overflow-x-scroll pb-2">
+      <div className="moviesContainer container-fluid pt-12 pb-6 pl-[5%] ">
+        <h1 className="text-2xl mb-2 md:text-xl sm:text-base">Movies</h1>
+        <div className="row pb-2">
+          <MovieList movies={movies} />
+        </div>
+      </div>
+      <div className="moviesContainer container-fluid  pl-[5%] ">
+        <h1 className="text-2xl mb-2 md:text-xl sm:text-base">Movies</h1>
+        <div className="row pb-2">
           <MovieList movies={movies} />
         </div>
       </div>
