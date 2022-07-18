@@ -35,7 +35,7 @@ const App = () => {
 
 
   return (
-    <div className="App overflow-hidden">
+    <div className="App ">
       <header className=" h-[140px] py-6 text-white bg-[#292929] flex items-center lg:justify-center sm:h-[67px]">
         <div className="px-[5%]  justify-center">
           <a href="#" className=" text-3xl  border border-[#fff] w-max p-2 lg:text-xl">MyTestApp</a>
