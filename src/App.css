@@ -10,6 +10,12 @@ a {
   text-decoration: none;
 }
 
+
+.moviesContainer>.row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
 .cardName {
   background: rgba(0, 0, 0, .7);
 }

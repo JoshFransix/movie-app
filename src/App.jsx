@@ -57,7 +57,7 @@ const App = () => {
       </div> */}
       <div className="moviesContainer container-fluid py-10 px-[5%] sm:py-4">
         <h1 className="text-2xl mb-4">Movies</h1>
-        <div className="flex flex-nowrap overflow-x-scroll">
+        <div className="row overflow-x-scroll">
           <MovieList movies={movies} />
         </div>
       </div>
