@@ -14,7 +14,7 @@ const App = () => {
   const [searchValue, setSearchValue] = useState('');
 
   const getMovieRequest = async () => {
-    const url = `http://www.omdbapi.com/?s=avenger&apikey=636b8a0`
+    const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=636b8a0`
 
     const response = await fetch(url)
     const responseJson = await response.json();
@@ -34,17 +34,17 @@ const App = () => {
 
   return (
     <div className="App overflow-hidden">
-      <header className=" h-[140px] py-6 text-white bg-[#292929] flex items-center lg:justify-center">
+      <header className=" h-[140px] py-6 text-white bg-[#292929] flex items-center lg:justify-center sm:h-[67px]">
         <div className="px-[5%]  justify-center">
           <a href="#" className=" text-3xl  border border-[#fff] w-max p-2 lg:text-xl">MyTestApp</a>
         </div>
       </header>
-      <div id="intro" className="h-[550px]  ">
+      <div id="intro" className="h-[550px]  sm:h-[257px]">
         <div className="px-[5%] w-full h-full flex items-center lg:justify-center">
-          <h1 className=" text-4xl  w-[490px] leading-[93.74px] text-[72px] text-white font-bold lg:text-center lg:text-5xl">Watch something incredible.</h1>
+          <h1 className=" text-7xl  w-[490px] leading-[93.74px] text-[72px] text-white font-bold lg:text-center lg:text-5xl sm:text-2xl">Watch something incredible.</h1>
         </div>
       </div>
-      <div className=" px-[5%]  py-16">
+      <div className=" px-[5%]  py-16 md:py-8 sm:py-6">
         <div className="search  flex flex-col">
           <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
         </div>
@@ -53,7 +53,7 @@ const App = () => {
         <MovieListHeading heading='Movies' />
 
       </div> */}
-      <div className="moviesContainer py-10 px-[5%]   ">
+      <div className="moviesContainer py-10 px-[5%] sm:py-4">
         <h1 className="text-2xl mb-4">Movies</h1>
         <div className="flex flex-nowrap overflow-x-scroll">
           <MovieList movies={movies} />
