@@ -55,9 +55,9 @@ const App = () => {
         <MovieListHeading heading='Movies' />
 
       </div> */}
-      <div className="moviesContainer container-fluid py-10 px-[5%] sm:py-4">
+      <div className="moviesContainer container-fluid py-10 pl-[5%] sm:py-4">
         <h1 className="text-2xl mb-4">Movies</h1>
-        <div className="row overflow-x-scroll">
+        <div className="row overflow-x-scroll pb-2">
           <MovieList movies={movies} />
         </div>
       </div>
