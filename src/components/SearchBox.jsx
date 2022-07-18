@@ -4,7 +4,7 @@ const SearchBox = (props) => {
       <label htmlFor="search">Search</label>
       <input
         name="search"
-        className=" border-[#000] border-[1.2px] rounded-sm p-2 mt-2 "
+        className=" border-[#000] border-[1.2px] rounded-sm p-2 mt-2 focus:outline-none"
         value={props.value}
         onChange={(event) => props.setSearchValue(event.target.value)}
 
